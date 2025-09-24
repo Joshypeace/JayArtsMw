@@ -70,7 +70,7 @@ export function ProcessSection() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-2 text-muted-foreground">
             <div className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-            <span>Ready to get started? Let's create something amazing together.</span>
+            <span>{`Ready to get started? Let's create something amazing together.`}</span>
             <div className="w-2 h-2 bg-silver rounded-full animate-pulse delay-500" />
           </div>
         </div>

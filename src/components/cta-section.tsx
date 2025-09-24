@@ -13,8 +13,8 @@ export function CTASection() {
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-xl sm:max-w-2xl mx-auto text-pretty px-4 sm:px-0 leading-relaxed">
-            Let's bring your vision to life. Whether it's capturing your special day, creating compelling content, or
-            building your brand identity, we're here to make it extraordinary.
+      {`      Let's bring your vision to life. Whether it's capturing your special day, creating compelling content, or
+            building your brand identity, we're here to make it extraordinary.`}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4 sm:px-0">

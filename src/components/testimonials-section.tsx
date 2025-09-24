@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Quote } from "lucide-react"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 export function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -58,8 +59,8 @@ export function TestimonialsSection() {
             <span className="text-silver">Say</span>
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-xl sm:max-w-2xl mx-auto text-pretty px-4 sm:px-0">
-            Don't just take our word for it. Here's what our satisfied clients have to say about their experience with
-            JayArts Multimedia.
+            {`Don't just take our word for it. Here's what our satisfied clients have to say about their experience with
+              JayArts Multimedia.`}
           </p>
         </div>
 
@@ -70,7 +71,7 @@ export function TestimonialsSection() {
                 <Quote className="w-10 h-10 sm:w-12 sm:h-12 text-gold mx-auto mb-4 sm:mb-6" />
 
                 <blockquote className="text-base sm:text-lg md:text-xl text-foreground mb-4 sm:mb-6 text-pretty leading-relaxed">
-                  "{testimonials[currentIndex].content}"
+                  `{testimonials[currentIndex].content}`
                 </blockquote>
 
                 <div className="flex justify-center mb-4">
@@ -80,7 +81,7 @@ export function TestimonialsSection() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                  <img
+                  <Image
                     src={testimonials[currentIndex].image || "/placeholder.svg"}
                     alt={testimonials[currentIndex].name}
                     className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gold"

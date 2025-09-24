@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { IntersectionObserver } from "@/components/intersection-observer"
 import { ParallaxSection } from "@/components/parallax-section"
+import Image from "next/image"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -19,7 +20,7 @@ export function HeroSection() {
       {/* Background Video/Image */}
       <ParallaxSection speed={0.3} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/90 z-10" />
-        <img
+        <Image
           src="/luxury-photography-studio-dark-elegant.jpg"
           alt="JayArts Studio"
           className="w-full h-full object-cover"
@@ -44,7 +45,7 @@ export function HeroSection() {
           >
             {/* Logo Animation */}
             <div className="mb-6 sm:mb-8 flex justify-center">
-              <img
+              <Image
                 src="/images/jayarts-logo.png"
                 alt="JayArts Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"

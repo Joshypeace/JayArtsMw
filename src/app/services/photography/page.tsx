@@ -52,8 +52,8 @@ export default function PhotographyPage() {
                 <span className="text-gold">Photography</span> <span className="text-foreground">Services</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty">
-                Professional photography services that capture life's most precious moments with artistic excellence.
-                From intimate portraits to grand celebrations, we create images that tell your story.
+               {` Professional photography services that capture life's most precious moments with artistic excellence.
+                From intimate portraits to grand celebrations, we create images that tell your story.`}
               </p>
             </div>
           </div>

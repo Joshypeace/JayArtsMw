@@ -7,8 +7,8 @@ export function ContactHero() {
             <span className="text-foreground">Get In</span> <span className="text-gold">Touch</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty">
-            Have a question about our services? Want to discuss a custom project? We'd love to hear from you and help
-            bring your creative vision to life.
+          {`  Have a question about our services? Want to discuss a custom project? We'd love to hear from you and help
+            bring your creative vision to life.`}
           </p>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Camera, Award, Users, Heart, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AboutPage() {
   const values = [
@@ -84,18 +85,18 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-pretty">
-                    Founded in 2019, JayArts Multimedia began as a passion project to capture the beauty and emotion of
+                {`    Founded in 2019, JayArts Multimedia began as a passion project to capture the beauty and emotion of
                     life's most important moments. What started as a small photography studio has grown into a
-                    full-service creative agency specializing in photography, videography, and graphic design.
+                    full-service creative agency specializing in photography, videography, and graphic design.`}
                   </p>
                   <p className="text-pretty">
-                    Our journey has been marked by countless weddings, corporate events, music videos, and branding
+                  {`  Our journey has been marked by countless weddings, corporate events, music videos, and branding
                     projects. Each project has taught us something new and reinforced our commitment to artistic
-                    excellence and client satisfaction.
+                    excellence and client satisfaction.`}
                   </p>
                   <p className="text-pretty">
-                    Today, we're proud to be one of the leading creative agencies in the region, known for our
-                    innovative approach, professional quality, and dedication to bringing our clients' visions to life.
+                   {` Today, we're proud to be one of the leading creative agencies in the region, known for our
+                    innovative approach, professional quality, and dedication to bringing our clients' visions to life.`}
                   </p>
                 </div>
                 <Button asChild className="mt-6 bg-gold text-deep-black hover:bg-gold/90 group">
@@ -107,7 +108,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <Card className="overflow-hidden border-border/50 glow-silver">
-                  <img src="/photography-studio.png" alt="JayArts Studio" className="w-full h-80 object-cover" />
+                  <Image src="/photography-studio.png" alt="JayArts Studio" className="w-full h-80 object-cover" />
                 </Card>
               </div>
             </div>
@@ -161,7 +162,7 @@ export default function AboutPage() {
               {team.map((member, index) => (
                 <Card key={index} className="group hover:glow-silver transition-all duration-300 border-border/50">
                   <CardContent className="p-6 text-center">
-                    <img
+                    <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
                       className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-gold"

@@ -62,7 +62,7 @@ export function ContactForm() {
           <CheckCircle className="w-16 h-16 text-gold mx-auto mb-6" />
           <h2 className="text-2xl font-bold text-foreground mb-4">Message Sent!</h2>
           <p className="text-muted-foreground mb-6 text-pretty">
-            Thank you for reaching out to us. We've received your message and will get back to you as soon as possible.
+           {` Thank you for reaching out to us. We've received your message and will get back to you as soon as possible.`}
           </p>
           <Button
             onClick={() => {
@@ -90,7 +90,7 @@ export function ContactForm() {
     <Card className="border-border/50">
       <CardHeader>
         <CardTitle className="text-2xl text-gold">Send Us a Message</CardTitle>
-        <p className="text-muted-foreground">Fill out the form below and we'll get back to you as soon as possible.</p>
+        <p className="text-muted-foreground">{`Fill out the form below and we'll get back to you as soon as possible.`}</p>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">

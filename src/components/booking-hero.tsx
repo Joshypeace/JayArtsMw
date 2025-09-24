@@ -8,8 +8,8 @@ export function BookingHero() {
             <span className="text-silver">Session</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-pretty">
-            Ready to capture your special moments? Fill out our booking form and we'll get back to you within 24 hours
-            with a personalized quote and consultation.
+          {`  Ready to capture your special moments? Fill out our booking form and we'll get back to you within 24 hours
+            with a personalized quote and consultation.`}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">

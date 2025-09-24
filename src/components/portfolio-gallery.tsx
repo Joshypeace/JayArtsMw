@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Eye, Play, ExternalLink, X } from "lucide-react"
+import Image from "next/image"
 
 type PortfolioItem = {
   id: number
@@ -169,7 +170,7 @@ export function PortfolioGallery() {
               onClick={() => setSelectedItem(item)}
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={item.thumbnail || "/placeholder.svg"}
                   alt={item.title}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
@@ -223,7 +224,7 @@ export function PortfolioGallery() {
                   {/* Media */}
                   <div className="relative">
                     {selectedItem.type === "image" ? (
-                      <img
+                      <Image
                         src={selectedItem.fullImage || selectedItem.thumbnail}
                         alt={selectedItem.title}
                         className="w-full h-80 lg:h-96 object-cover"

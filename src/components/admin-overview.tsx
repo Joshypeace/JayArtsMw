@@ -65,7 +65,7 @@ export function AdminOverview() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold text-foreground mb-2">Dashboard Overview</h1>
-        <p className="text-muted-foreground">Welcome back! Here's what's happening with your business.</p>
+        <p className="text-muted-foreground">{`Welcome back! Here's what's happening with your business.`}</p>
       </div>
 
       {/* Stats Grid */}
@@ -133,7 +133,7 @@ export function AdminOverview() {
           <CardContent className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-gold/10 rounded-lg text-center hover:bg-gold/20 transition-colors cursor-pointer">
-                <ImageIcon className="w-8 h-8 text-gold mx-auto mb-2" /> // Update Image to ImageIcon
+                <ImageIcon className="w-8 h-8 text-gold mx-auto mb-2" />
                 <p className="text-sm font-medium">Add Portfolio</p>
               </div>
               <div className="p-4 bg-silver/10 rounded-lg text-center hover:bg-silver/20 transition-colors cursor-pointer">

@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Camera, Video, Palette, Sparkles, Check, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function ServiceDetails() {
   const services = [
@@ -110,7 +111,7 @@ export function ServiceDetails() {
 
               <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
                 <Card className="overflow-hidden border-border/50 glow-silver">
-                  <img
+                  <Image
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     className="w-full h-80 object-cover"

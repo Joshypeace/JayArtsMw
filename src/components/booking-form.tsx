@@ -106,8 +106,8 @@ export function BookingForm() {
           <CheckCircle className="w-16 h-16 text-gold mx-auto mb-6" />
           <h2 className="text-2xl font-bold text-foreground mb-4">Thank You!</h2>
           <p className="text-muted-foreground mb-6 text-pretty">
-            Your booking request has been submitted successfully. We'll review your requirements and get back to you
-            within 24 hours with a personalized quote and consultation details.
+         {`   Your booking request has been submitted successfully. We'll review your requirements and get back to you
+            within 24 hours with a personalized quote and consultation details.`}
           </p>
           <Button
             onClick={() => {
