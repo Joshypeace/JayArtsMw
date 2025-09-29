@@ -70,7 +70,7 @@ export function FeaturedPortfolio() {
               className="group overflow-hidden hover:glow-silver transition-all duration-300 border-border/50"
             >
               <div className="relative overflow-hidden">
-                <Image
+                <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.title}
                   className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500"

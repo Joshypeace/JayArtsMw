@@ -108,7 +108,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <Card className="overflow-hidden border-border/50 glow-silver">
-                  <Image src="/photography-studio.png" alt="JayArts Studio" className="w-full h-80 object-cover" />
+                  <img src="/photography-studio.png" alt="JayArts Studio" className="w-full h-80 object-cover" />
                 </Card>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
               {team.map((member, index) => (
                 <Card key={index} className="group hover:glow-silver transition-all duration-300 border-border/50">
                   <CardContent className="p-6 text-center">
-                    <Image
+                    <img
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
                       className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-gold"

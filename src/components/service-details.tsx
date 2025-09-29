@@ -111,7 +111,7 @@ export function ServiceDetails() {
 
               <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
                 <Card className="overflow-hidden border-border/50 glow-silver">
-                  <Image
+                  <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
                     className="w-full h-80 object-cover"

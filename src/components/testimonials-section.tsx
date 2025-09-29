@@ -81,7 +81,7 @@ export function TestimonialsSection() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                  <Image
+                  <img
                     src={testimonials[currentIndex].image || "/placeholder.svg"}
                     alt={testimonials[currentIndex].name}
                     className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gold"

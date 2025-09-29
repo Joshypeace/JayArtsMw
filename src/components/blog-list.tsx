@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 
 export function BlogList() {
@@ -52,7 +51,7 @@ export function BlogList() {
               className="group overflow-hidden hover:glow-gold transition-all duration-300 border-border/50"
             >
               <div className="relative overflow-hidden">
-                <Image
+                <img
                   src={post.image || "/placeholder.svg"}
                   alt={post.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
