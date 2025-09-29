@@ -10,7 +10,7 @@ import { AdminSettings } from "@/components/admin-settings"
 import { LoadingAnimation } from "@/components/loading-animation"
 import { useRouter } from "next/navigation"
 
-export function AdminDashboard() {
+export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("overview")
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [isLoading, setIsLoading] = useState(true)

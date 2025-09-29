@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Camera, Award, Users, Heart, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function AboutPage() {
   const values = [

@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Camera, Lock, AlertCircle } from "lucide-react"
 import { useRouter } from "next/navigation"
 
-export function AdminLogin() {
+export default function AdminLogin() {
   const [credentials, setCredentials] = useState({ username: "", password: "" })
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
@@ -53,81 +53,83 @@ export function AdminLogin() {
   }
 
   return (
-    <Card className="w-full max-w-md border-gold/50 glow-gold">
-      <CardHeader className="text-center">
-        <div className="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-          <Camera className="w-8 h-8 text-gold" />
-        </div>
-        <CardTitle className="text-2xl text-gold">JayArts Admin</CardTitle>
-        <p className="text-muted-foreground">Sign in to access the dashboard</p>
-      </CardHeader>
-      <CardContent>
-        <form onSubmit={handleLogin} className="space-y-4">
-          <div className="space-y-2">
-            <Label htmlFor="username">Username</Label>
-            <Input
-              id="username"
-              value={credentials.username}
-              onChange={(e) => setCredentials((prev) => ({ ...prev, username: e.target.value }))}
-              className="border-border focus:border-gold"
-              placeholder="Enter username"
-              required
-            />
+    <div className="min-h-screen flex items-center justify-center p-4 bg-background">
+      <Card className="w-full max-w-md border-gold/50 glow-gold">
+        <CardHeader className="text-center">
+          <div className="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Camera className="w-8 h-8 text-gold" />
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
-            <Input
-              id="password"
-              type="password"
-              value={credentials.password}
-              onChange={(e) => setCredentials((prev) => ({ ...prev, password: e.target.value }))}
-              className="border-border focus:border-gold"
-              placeholder="Enter password"
-              required
-            />
-          </div>
-
-          {error && (
-            <div className="flex items-center space-x-2 text-red-500 text-sm bg-red-50 dark:bg-red-950/20 p-3 rounded-md">
-              <AlertCircle className="w-4 h-4" />
-              <span>{error}</span>
+          <CardTitle className="text-2xl text-gold">JayArts Admin</CardTitle>
+          <p className="text-muted-foreground">Sign in to access the dashboard</p>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="username">Username</Label>
+              <Input
+                id="username"
+                value={credentials.username}
+                onChange={(e) => setCredentials((prev) => ({ ...prev, username: e.target.value }))}
+                className="border-border focus:border-gold"
+                placeholder="Enter username"
+                required
+              />
             </div>
-          )}
+            <div className="space-y-2">
+              <Label htmlFor="password">Password</Label>
+              <Input
+                id="password"
+                type="password"
+                value={credentials.password}
+                onChange={(e) => setCredentials((prev) => ({ ...prev, password: e.target.value }))}
+                className="border-border focus:border-gold"
+                placeholder="Enter password"
+                required
+              />
+            </div>
 
-          <Button
-            type="submit"
-            disabled={isLoading}
-            className="w-full bg-slate-900 text-white hover:bg-slate-800 font-medium"
-          >
-            {isLoading ? (
-              <div className="flex items-center space-x-2">
-                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                <span>Signing in...</span>
-              </div>
-            ) : (
-              <div className="flex items-center space-x-2">
-                <Lock className="w-4 h-4" />
-                <span>Sign In</span>
+            {error && (
+              <div className="flex items-center space-x-2 text-red-500 text-sm bg-red-50 dark:bg-red-950/20 p-3 rounded-md">
+                <AlertCircle className="w-4 h-4" />
+                <span>{error}</span>
               </div>
             )}
-          </Button>
-        </form>
 
-        <div className="mt-4 space-y-2">
-          <div className="text-center text-xs text-muted-foreground">
-            Demo credentials: <strong>admin</strong> / <strong>jayarts2024</strong>
+            <Button
+              type="submit"
+              disabled={isLoading}
+              className="w-full bg-slate-900 text-white hover:bg-slate-800 font-medium"
+            >
+              {isLoading ? (
+                <div className="flex items-center space-x-2">
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  <span>Signing in...</span>
+                </div>
+              ) : (
+                <div className="flex items-center space-x-2">
+                  <Lock className="w-4 h-4" />
+                  <span>Sign In</span>
+                </div>
+              )}
+            </Button>
+          </form>
+
+          <div className="mt-4 space-y-2">
+            <div className="text-center text-xs text-muted-foreground">
+              Demo credentials: <strong>admin</strong> / <strong>jayarts2024</strong>
+            </div>
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={fillDemoCredentials}
+              className="w-full text-xs border-gold/30 text-gold hover:bg-gold/10 bg-transparent"
+            >
+              Use Demo Credentials
+            </Button>
           </div>
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            onClick={fillDemoCredentials}
-            className="w-full text-xs border-gold/30 text-gold hover:bg-gold/10 bg-transparent"
-          >
-            Use Demo Credentials
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
+        </CardContent>
+      </Card>
+    </div>
   )
 }
