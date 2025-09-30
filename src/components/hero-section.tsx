@@ -20,10 +20,12 @@ export function HeroSection() {
       {/* Background Video/Image */}
       <ParallaxSection speed={0.3} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/90 z-10" />
-        <img
+        <Image
           src="/luxury-photography-studio-dark-elegant.jpg"
           alt="JayArts Studio"
           className="w-full h-full object-cover"
+          fill
+          priority
         />
       </ParallaxSection>
 
@@ -114,13 +116,13 @@ export function HeroSection() {
           </div>
         </IntersectionObserver>
       </div>
-
+ 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+      {/* <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
         <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-gold rounded-full flex justify-center">
           <div className="w-1 h-2 sm:h-3 bg-gold rounded-full mt-2 animate-bounce" />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
