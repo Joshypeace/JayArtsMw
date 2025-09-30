@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook, Twitter } from "lucide-react"
+import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { SiInstagram, SiFacebook, SiTiktok } from "react-icons/si"
 
 export function ContactInfo() {
   return (
@@ -16,7 +17,7 @@ export function ContactInfo() {
               <Phone className="w-5 h-5 text-silver mt-1" />
               <div>
                 <p className="font-medium text-foreground">Phone</p>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground">+265 884 849 879</p>
                 <p className="text-xs text-muted-foreground">Available 9 AM - 6 PM EST</p>
               </div>
             </div>
@@ -25,7 +26,7 @@ export function ContactInfo() {
               <Mail className="w-5 h-5 text-silver mt-1" />
               <div>
                 <p className="font-medium text-foreground">Email</p>
-                <p className="text-muted-foreground">hello@jayarts.com</p>
+                <p className="text-muted-foreground">joelchilapondwa@gmail.com</p>
                 <p className="text-xs text-muted-foreground">We respond within 24 hours</p>
               </div>
             </div>
@@ -34,8 +35,8 @@ export function ContactInfo() {
               <MapPin className="w-5 h-5 text-silver mt-1" />
               <div>
                 <p className="font-medium text-foreground">Studio Location</p>
-                <p className="text-muted-foreground">123 Creative Avenue</p>
-                <p className="text-muted-foreground">New York, NY 10001</p>
+                <p className="text-muted-foreground">Area 57</p>
+                <p className="text-muted-foreground">Lilongwe, MW</p>
               </div>
             </div>
 
@@ -63,23 +64,23 @@ export function ContactInfo() {
             <Button
               variant="outline"
               size="icon"
-              className="border-gold hover:bg-gold hover:text-deep-black bg-transparent"
+              className="border-gold hover:bg-gold hover:text-gold bg-transparent"
             >
-              <Instagram className="w-4 h-4" />
+              <SiInstagram className="w-4 h-4" />
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="border-gold hover:bg-gold hover:text-deep-black bg-transparent"
+              className="border-gold hover:bg-gold hover:text-gold bg-transparent"
             >
-              <Facebook className="w-4 h-4" />
+              <SiFacebook className="w-4 h-4" />
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="border-gold hover:bg-gold hover:text-deep-black bg-transparent"
+              className="border-gold hover:bg-gold hover:text-gold bg-transparent"
             >
-              <Twitter className="w-4 h-4" />
+              <SiTiktok className="w-4 h-4" />
             </Button>
           </div>
         </CardContent>
@@ -97,7 +98,7 @@ export function ContactInfo() {
           <Button
             asChild
             variant="outline"
-            className="w-full border-silver text-silver hover:bg-silver hover:text-deep-black bg-transparent"
+            className="w-full border-silver text-white hover:bg-silver hover:text-gold bg-transparent"
           >
             <a href="/portfolio">View Portfolio</a>
           </Button>

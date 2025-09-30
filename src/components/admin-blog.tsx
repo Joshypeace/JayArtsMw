@@ -184,11 +184,11 @@ export function AdminBlog() {
                   </div>
                 </div>
                 <div className="flex space-x-2 ml-4">
-                  <Button size="sm" variant="outline">
+                  <Button size="sm" variant="outline" className="flex-1 bg-transparent hover:text-gold">
                     <Eye className="w-3 h-3 mr-1" />
                     View
                   </Button>
-                  <Button size="sm" variant="outline">
+                  <Button size="sm" variant="outline" className="flex-1 bg-transparent hover:text-gold">
                     <Edit className="w-3 h-3 mr-1" />
                     Edit
                   </Button>

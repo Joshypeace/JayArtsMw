@@ -33,20 +33,20 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Jay Williams",
+      name: "Joel Chilapondwa",
       role: "Founder & Lead Photographer",
       image: "/business-executive-portrait.png",
       description:
         "With over 8 years of experience, Jay brings artistic vision and technical expertise to every project.",
     },
     {
-      name: "Sarah Chen",
+      name: "Joshua Simengwa",
       role: "Creative Director",
       image: "/creative-fashion-designer-portrait.jpg",
       description: "Sarah leads our creative team with her exceptional eye for design and storytelling.",
     },
     {
-      name: "Michael Rodriguez",
+      name: "Hasheem",
       role: "Lead Videographer",
       image: "/musician-artist-portrait.jpg",
       description:

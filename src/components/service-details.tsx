@@ -19,7 +19,7 @@ export function ServiceDetails() {
         "Engagement Sessions - Romantic couple photography",
         "Maternity & Newborn - Tender moments beautifully preserved",
       ],
-      startingPrice: "From $500",
+      startingPrice: "From Mk90, 000",
     },
     {
       icon: Video,
@@ -34,7 +34,7 @@ export function ServiceDetails() {
         "Event Videography - Live event coverage and streaming",
         "Commercial Ads - Marketing videos that drive results",
       ],
-      startingPrice: "From $800",
+      startingPrice: "From MK120000",
     },
     {
       icon: Palette,
@@ -49,7 +49,7 @@ export function ServiceDetails() {
         "Packaging Design - Product packaging and label design",
         "Illustration - Custom artwork and digital illustrations",
       ],
-      startingPrice: "From $300",
+      startingPrice: "From MK40000",
     },
     {
       icon: Sparkles,
@@ -64,7 +64,7 @@ export function ServiceDetails() {
         "Website Design - Digital brand expression and user experience",
         "Brand Consultation - Strategic guidance and implementation",
       ],
-      startingPrice: "From $1,200",
+      startingPrice: "From MK150,000",
     },
   ]
 

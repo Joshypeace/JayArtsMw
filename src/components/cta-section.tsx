@@ -34,7 +34,7 @@ export function CTASection() {
               asChild
               variant="outline"
               size="lg"
-              className="w-full sm:w-auto border-silver text-silver hover:bg-silver hover:text-deep-black transition-all duration-300 bg-transparent"
+              className="w-full sm:w-auto border-silver text-silver hover:bg-silver hover:text-white transition-all duration-300 bg-transparent"
             >
               <Link href="/contact">Get In Touch</Link>
             </Button>

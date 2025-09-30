@@ -19,7 +19,7 @@ export function AdminBookings() {
       package: "Gold Package",
       date: "2024-02-15",
       status: "confirmed",
-      amount: "900,000 UGX",
+      amount: "900,000 MWK",
       submittedAt: "2024-01-15",
     },
     {
@@ -31,7 +31,7 @@ export function AdminBookings() {
       package: "Custom Package",
       date: "2024-02-20",
       status: "pending",
-      amount: "1,200,000 UGX",
+      amount: "1,200,000 MWK",
       submittedAt: "2024-01-18",
     },
     {
@@ -43,7 +43,7 @@ export function AdminBookings() {
       package: "Branding Package",
       date: "2024-02-25",
       status: "confirmed",
-      amount: "800,000 UGX",
+      amount: "800,000 MWK",
       submittedAt: "2024-01-20",
     },
     {
@@ -55,7 +55,7 @@ export function AdminBookings() {
       package: "Custom Package",
       date: "2024-03-01",
       status: "pending",
-      amount: "1,500,000 UGX",
+      amount: "1,500,000 MWK",
       submittedAt: "2024-01-22",
     },
   ])
@@ -164,7 +164,7 @@ export function AdminBookings() {
 
                 {/* Actions */}
                 <div className="flex flex-col space-y-2">
-                  <Button size="sm" variant="outline" className="w-full bg-transparent">
+                  <Button size="sm" variant="outline" className="w-full bg-transparent hover:text-gold">
                     <Eye className="w-3 h-3 mr-2" />
                     View Details
                   </Button>

@@ -9,7 +9,7 @@ export function PricingSection() {
     {
       name: "Bronze Package",
       price: "400,000",
-      currency: "UGX",
+      currency: "MWK",
       icon: Star,
       description: "Perfect for intimate ceremonies and smaller celebrations",
       features: [
@@ -27,7 +27,7 @@ export function PricingSection() {
     {
       name: "Silver Package",
       price: "650,000",
-      currency: "UGX",
+      currency: "MWK",
       icon: Crown,
       description: "Most popular choice for complete wedding coverage",
       features: [
@@ -47,7 +47,7 @@ export function PricingSection() {
     {
       name: "Gold Package",
       price: "900,000",
-      currency: "UGX",
+      currency: "MWK",
       icon: Gem,
       description: "Ultimate luxury experience with premium deliverables",
       features: [

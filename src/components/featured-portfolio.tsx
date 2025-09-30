@@ -104,8 +104,8 @@ export function FeaturedPortfolio() {
             className="border-gold text-gold hover:bg-gold hover:text-deep-black group bg-transparent w-full sm:w-auto"
           >
             <Link href="/portfolio" className="flex items-center justify-center space-x-2">
-              <span>View Full Portfolio</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <span className="group-hover:text-white transition-colors">View Full Portfolio</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 group-hover:text-white transition-colors transition-transform" />
             </Link>
           </Button>
         </div>

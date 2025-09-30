@@ -47,10 +47,13 @@ export function HeroSection() {
           >
             {/* Logo Animation */}
             <div className="mb-6 sm:mb-8 flex justify-center">
-              <img
+              <Image
                 src="/images/jayarts-logo.png"
                 alt="JayArts Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                width={150}
+                height={150}
+                priority
               />
             </div>
 
@@ -85,11 +88,11 @@ export function HeroSection() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="w-full sm:w-auto border-silver text-silver hover:bg-silver hover:text-deep-black transition-all duration-300 group hover-lift bg-transparent"
+                className="w-full sm:w-auto border-gold text-silver hover:bg-silver transition-all duration-300 group hover-lift bg-transparent"
               >
                 <Link href="/portfolio" className="flex items-center justify-center space-x-2">
-                  <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>View Our Work</span>
+                  <Play className="w-5 h-5 group-hover:scale-110 group-hover:text-white transition-colors transition-transform" />
+                  <span className="group-hover:text-white transition-colors">View Our Work</span>
                 </Link>
               </Button>
             </div>
