@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Camera, Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import { Camera, Mail, Phone, MapPin } from "lucide-react"
+import { SiInstagram, SiFacebook, SiTiktok } from "react-icons/si";
 
 export function Footer() {
   return (
@@ -14,7 +15,7 @@ export function Footer() {
               </div>
               <div>
                 <div className="text-lg sm:text-xl font-bold text-gold">JayArts</div>
-                <div className="text-xs sm:text-sm text-silver">Multimedia</div>
+                <div className="text-xs sm:text-sm text-white">Multimedia</div>
               </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -82,35 +83,35 @@ export function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="w-4 h-4 text-silver flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+265 884 849 879</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="w-4 h-4 text-silver flex-shrink-0" />
-                <span className="break-all">hello@jayarts.com</span>
+                <span className="break-all">joelchilapondwa@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-silver flex-shrink-0" />
-                <span>New York, NY</span>
+                <span>Lilongwe, MW</span>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="flex space-x-4 pt-2">
               <Link href="#" className="text-muted-foreground hover:text-gold transition-colors" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
+                <SiInstagram className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-gold transition-colors" aria-label="Facebook">
-                <Facebook className="w-5 h-5" />
+                <SiFacebook className="w-5 h-5" />
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-gold transition-colors" aria-label="Twitter">
-                <Twitter className="w-5 h-5" />
+                <SiTiktok className="w-5 h-5" />
               </Link>
             </div>
           </div>
         </div>
 
         <div className="border-t border-border mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
-          <p>&copy; 2025 JayArts Multimedia. All rights reserved.</p>
+          <p>&copy; 2017 JayArts Multimedia. All rights reserved.</p>
         </div>
       </div>
     </footer>
